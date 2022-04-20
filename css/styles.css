@@ -318,7 +318,7 @@ header {
 }
 .team-icon {
   fill: ;
-  
+ 
 }
 .team-icon:hover {
   fill: 
@@ -373,6 +373,10 @@ header {
   
 }
 
+.site-nav.list .item {
+  color: var(--accent-text-color);
+  position: relative;
+}
 .link-current {
   color: var(--accent-text-color);
   }
@@ -381,7 +385,44 @@ header {
   text-decoration: none;
   padding-top: 32px;
   padding-bottom: 32px;
-}  
+} 
+.link-current::after {
+  content: "" ;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border: 2px solid var(--accent-text-color);
+  border-radius: 2px;
+  background-color: var(--accent-text-color);
+
+}
+/*Чем мы занимаемся (позиционирование) */
+.picture-work {
+  position: relative;
+}
+
+.box-work {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  bottom: 0;
+  left: 0;
+}
+.title-work {
+  display: block;
+  line-height: 1.14;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+  padding-top: 27px ;
+  padding-bottom: 27px;
+  font-style: normal;
+}
+
+
 /* Постоянные клиенты */
 .client-cont {
   display: flex;
