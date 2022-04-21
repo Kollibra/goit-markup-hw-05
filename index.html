@@ -63,7 +63,9 @@
     <main>
       <section class="hero">
         <h1 class="hero-title">эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="button">Заказать услугу</button>
+        <button type="button" class="button" data-modal-open>
+          Заказать услугу
+        </button>
       </section>
 
       <section class="section">
@@ -449,8 +451,14 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden">
-      <div class="modal"></div>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-button" data-modal-close>
+          <svg class="modal-icon" height="18" width="18">
+            <use href="./images/symbol-defsss.svg#close-black"></use>
+          </svg>
+        </button>
+      </div>
     </div>
 
     <script src="./js/modal.js"></script>
