@@ -614,7 +614,7 @@ fill: currentColor;
 
 .portf-link:hover .overlay {
   transform: translateY(-294px);
-  transition: transform 5000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 1;
 }
 .conteiner-portf {
