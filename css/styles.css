@@ -584,8 +584,14 @@ fill: currentColor;
   }
 
 /* Портфолио overlay */
+/*.forpocish {
+  position: absolute;*/
+}
 .pichure-overlay {
   position: relative;
+  overflow: hidden;
+
+  
   
 }
 .overlay {
@@ -596,12 +602,13 @@ fill: currentColor;
   height: 294px;
   background-color: rgba(33, 150, 243, 0.9);
   padding: 63px 24px;
-  opacity: 0;
-  overflow: hidden;
   
-  /*overflow: hidden;*/
-     
-}
+  overflow: hidden;
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  
+ }
+
 
 .overlay-text {
   font-weight: 400;
@@ -613,14 +620,12 @@ fill: currentColor;
 }
 
 .portf-link:hover .overlay {
-  transform: translateY(-294px);
+  transform: translateY(-100%);
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 1;
 }
-.conteiner-portf {
-  
-  
-}
+
+
 
 /*.overlay:hover {
  opacity: 1;
