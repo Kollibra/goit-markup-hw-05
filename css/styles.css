@@ -792,9 +792,11 @@ fill: currentColor;
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: translate(-50%, -50%) scale(1);
-    
-    
+        
     }
+.modal:hover {
+  border: 2px solid var(--accent-text-color) ;
+}    
 .close-button { 
   position: absolute;
   top: 8px;
@@ -807,8 +809,15 @@ fill: currentColor;
   border-radius: 50%;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-}     
+}  
+.close-button:hover  {
+  border : 2px solid var(--accent-text-color);
+  
+} 
 .modal-icon {
   fill:  #000000;
   align-items: center;
+}
+.modal-icon:hover {
+  fill: var(--accent-text-color);
 }
