@@ -753,13 +753,14 @@ footer {
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         margin: 0 auto;
     }
-    .user-chekbox:checked + .check-icon {
+    .user-chekbox:checked + .label-chekbox
+    > .check-icon  {
         background-color: #404bbf;
         border: none;
         fill: #F4F4FD;
     }
-    .check-icon:checked {
+    /* .check-icon:checked {
         background-color: #404bbf;
         border: none;
         fill: #F4F4FD;
-    }
+    } */
