@@ -758,3 +758,8 @@ footer {
         border: none;
         fill: #F4F4FD;
     }
+    .check-icon:checked {
+        background-color: #404bbf;
+        border: none;
+        fill: #F4F4FD;
+    }
